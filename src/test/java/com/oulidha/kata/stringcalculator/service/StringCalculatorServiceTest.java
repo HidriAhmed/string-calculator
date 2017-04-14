@@ -31,4 +31,17 @@ public class StringCalculatorServiceTest {
         //then
         assertThat(result).isEqualTo(1);
     }
+
+    @Test
+    public void should_return_2_when_2(){
+        //given
+        StringCalculatorService stringCalculatorService = new StringCalculatorService();
+        String input = "2";
+
+        //when
+        int result = stringCalculatorService.add(input);
+
+        //then
+        assertThat(result).isEqualTo(2);
+    }
 }

@@ -8,6 +8,9 @@ public class StringCalculatorService {
         if("1".equals(numbers)){
             return 1;
         }
+        if("2".equals(numbers)){
+            return 2;
+        }
         return 0;
     }
 }
