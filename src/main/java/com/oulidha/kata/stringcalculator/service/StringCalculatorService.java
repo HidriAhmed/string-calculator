@@ -1,16 +1,15 @@
 package com.oulidha.kata.stringcalculator.service;
 
+import java.util.Collections;
+
 /**
  * Created by ahidri on 14/04/2017.
  */
 public class StringCalculatorService {
     public int add(String numbers) {
-        if("1".equals(numbers)){
-            return 1;
+        if ("".equals(numbers)){
+            return 0;
         }
-        if("2".equals(numbers)){
-            return 2;
-        }
-        return 0;
+        return Integer.parseInt(numbers);
     }
 }
