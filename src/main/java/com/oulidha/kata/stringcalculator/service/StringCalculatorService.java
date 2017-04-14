@@ -5,6 +5,9 @@ package com.oulidha.kata.stringcalculator.service;
  */
 public class StringCalculatorService {
     public int add(String numbers) {
+        if("1".equals(numbers)){
+            return 1;
+        }
         return 0;
     }
 }

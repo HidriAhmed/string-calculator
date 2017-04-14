@@ -18,4 +18,17 @@ public class StringCalculatorServiceTest {
         //then
         assertThat(result).isEqualTo(0);
     }
+
+    @Test
+    public void should_return_1_when_1(){
+        //given
+        StringCalculatorService stringCalculatorService = new StringCalculatorService();
+        String input = "1";
+
+        //when
+        int result = stringCalculatorService.add(input);
+
+        //then
+        assertThat(result).isEqualTo(1);
+    }
 }
