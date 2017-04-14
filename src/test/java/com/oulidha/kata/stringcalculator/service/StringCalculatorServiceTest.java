@@ -44,4 +44,17 @@ public class StringCalculatorServiceTest {
         //then
         assertThat(result).isEqualTo(2);
     }
+
+    @Test
+    public void should_return_3_when_1_and2(){
+        //given
+        StringCalculatorService stringCalculatorService = new StringCalculatorService();
+        String input = "1,2";
+
+        //when
+        int result = stringCalculatorService.add(input);
+
+        //then
+        assertThat(result).isEqualTo(3);
+    }
 }
